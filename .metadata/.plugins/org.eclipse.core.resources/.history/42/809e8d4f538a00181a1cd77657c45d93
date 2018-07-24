@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+form {
+		text-align: center;
+		padding: 20px;
+		margin: 10px;
+		
+}
+input[type="password"]:hover
+{
+	background-color: #000000;
+
+}
+input[type="button"]:click
+{
+	background-color:#000000;
+	text-color: #FFFFFF;
+}
+.signuparea{
+	text-align:center;
+}
+a:visited
+{
+	text-color: #000000;
+}
+</style>
+<script>
+function check()
+{
+var email = loginform.email.value;
+var password = loginform.password.value;
+
+	if(email=='' || password=='')
+	{
+		alert('Please enter all the required values');
+		return false;
+	
+	}
+	else{
+	
+		alert('Successful');
+		return true;
+	}
+
+}
+
+</script>
+</head>
+<body>
+<h1  align="center"> Online BookStore</h1>
+
+<form name="loginform"  method="get" onsubmit=" return check()" action="http://localhost:8081/MyWebDemos/hs"> 
+<p>Enter your name</p>
+<input type = "text" placeholder="Enter your name"/><br/>
+<p>Enter your email ID</p>
+<input type = "text" placeholder="Enter your email ID" name="email"/><br/>
+<p>Enter your password</p>
+<input type="password" placeholder="Enter your password" name="password"/><br/>
+
+<p>Enter login type</p>
+<select>
+<option value="Admin">Admin</option>
+<option value="Customer">Customer</option>
+</select>
+<input type = "submit" value="Login" />
+</form>
+<div class="signuparea">
+<a href="signup.html">Sign up</a>
+</div>
+
+
+</body>
+</html>

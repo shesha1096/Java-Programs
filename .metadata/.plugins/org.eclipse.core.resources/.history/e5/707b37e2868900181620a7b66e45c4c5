@@ -1,0 +1,92 @@
+package com.bookstore.dao.classes;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.bookstore.interfaces.CustomerLoginDao;
+import com.bookstore.model.User;
+import com.bookstore.utilities.DbUtility;
+
+public class CustomerLoginDao1 implements CustomerLoginDao {
+	private Connection connection;
+	{
+		 connection = DbUtility.connectToDb();
+		
+	}
+
+	@Override
+	public boolean checkUser(String username, String password) {
+		// TODO Auto-generated method stub
+		
+		
+		if(connection!=null)
+		{
+			String query = "select username,password from customer";
+			try {
+				PreparedStatement pStatement = connection.prepareStatement(query) ;
+				ResultSet rs = pStatement.executeQuery();
+				while(rs.next())
+				{
+					if(rs.getString(1).equals(username) && rs.getString(2).equals(password))
+					{
+						System.out.println("Successfully logged in");
+						return true;
+					}
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return false;
+	}
+
+	@Override
+	public boolean loginUser() {
+		// TODO Auto-generated method stub
+		
+		return false;
+	}
+	public void createUser(User user)
+	{
+		if(connection!=null)
+		{
+			String query = "insert into request values(?,?,?)";
+			try {
+				PreparedStatement pStatement = connection.prepareStatement(query);
+				pStatement.setString(1, user.getUsername());
+				pStatement.setString(2, user.getPassword());
+				pStatement.setString(3, user.getMobileNumber());
+				int n = pStatement.executeUpdate();
+				if(n>0)
+				{
+					System.out.println("Successfully inserted");
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+	public void viewStore()
+	{
+		String query = "select * from bookstore";
+		try {
+			PreparedStatement pStatement = connection.prepareStatement(query);
+			ResultSet rs = pStatement.executeQuery();
+			while(rs.next())
+			{
+				System.out.println(rs.getString(2));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

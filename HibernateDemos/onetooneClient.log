@@ -1,0 +1,461 @@
+16:45:50,962  INFO Environment:514 - Hibernate 3.2.5
+  16:45:50,967  INFO Environment:547 - hibernate.properties not found
+  16:45:50,969  INFO Environment:681 - Bytecode provider name : cglib
+  16:45:50,971  INFO Environment:598 - using JDK 1.4 java.sql.Timestamp handling
+  16:45:51,010  INFO Configuration:1426 - configuring from resource: /hibernate.cfg.xml
+  16:45:51,011  INFO Configuration:1403 - Configuration resource: /hibernate.cfg.xml
+  16:45:51,052 DEBUG DTDEntityResolver:38 - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+  16:45:51,053 DEBUG DTDEntityResolver:40 - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+  16:45:51,054 DEBUG DTDEntityResolver:50 - located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+  16:45:51,071 DEBUG Configuration:1387 - connection.driver_class=oracle.jdbc.driver.OracleDriver
+  16:45:51,071 DEBUG Configuration:1387 - connection.url=jdbc:oracle:thin:@localhost:1521:xe
+  16:45:51,071 DEBUG Configuration:1387 - connection.username=shesha1096
+  16:45:51,071 DEBUG Configuration:1387 - connection.password=shesha1096shankar
+  16:45:51,071 DEBUG Configuration:1387 - cache.provider_class=org.hibernate.cache.EhCacheProvider
+  16:45:51,072 DEBUG Configuration:1387 - hibernate.cache.use_second_level_cache=true
+  16:45:51,072 DEBUG Configuration:1387 - hibernate.cache.use_query_cache=true
+  16:45:51,072 DEBUG Configuration:1387 - connection.pool_size=100
+  16:45:51,072 DEBUG Configuration:1387 - dialect=org.hibernate.dialect.Oracle10gDialect
+  16:45:51,072 DEBUG Configuration:1387 - current_session_context_class=thread
+  16:45:51,072 DEBUG Configuration:1387 - show_sql=true
+  16:45:51,073 DEBUG Configuration:1387 - hibernate.connection.autocommit=true
+  16:45:51,073 DEBUG Configuration:1387 - hibernate.hbm2ddl.auto=update
+  16:45:51,073 DEBUG Configuration:1586 - null<-org.dom4j.tree.DefaultAttribute@22a71081 [Attribute: name resource value "com/hbm/onetoone.hbm.xml"]
+  16:45:51,073  INFO Configuration:553 - Reading mappings from resource : com/hbm/onetoone.hbm.xml
+  16:45:51,075 DEBUG DTDEntityResolver:38 - trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+  16:45:51,075 DEBUG DTDEntityResolver:40 - recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+  16:45:51,076 DEBUG DTDEntityResolver:50 - located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+  16:45:51,121  INFO HbmBinder:300 - Mapping class: com.bean.Employee -> employee1
+  16:45:51,129 DEBUG HbmBinder:1270 - Mapped property: employeeId -> employeeId
+  16:45:51,133 DEBUG HbmBinder:1270 - Mapped property: name -> name
+  16:45:51,133 DEBUG HbmBinder:1270 - Mapped property: email -> email
+  16:45:51,135 DEBUG HbmBinder:1270 - Mapped property: address
+  16:45:51,185 DEBUG HbmBinder:1270 - Mapped property: department -> department
+  16:45:51,185  INFO HbmBinder:300 - Mapping class: com.bean.Address -> address1
+  16:45:51,186 DEBUG HbmBinder:1270 - Mapped property: addressId -> addressId
+  16:45:51,186 DEBUG HbmBinder:1270 - Mapped property: addressLine1 -> addressLine1
+  16:45:51,186 DEBUG HbmBinder:1270 - Mapped property: city -> city
+  16:45:51,186 DEBUG HbmBinder:1270 - Mapped property: state -> state
+  16:45:51,187 DEBUG HbmBinder:1270 - Mapped property: country -> country
+  16:45:51,187 DEBUG HbmBinder:1270 - Mapped property: employee
+  16:45:51,187  INFO HbmBinder:300 - Mapping class: com.bean.Department -> department1
+  16:45:51,187 DEBUG HbmBinder:1270 - Mapped property: deptId -> deptId
+  16:45:51,187 DEBUG HbmBinder:1270 - Mapped property: deptName -> deptName
+  16:45:51,188  INFO HbmBinder:300 - Mapping class: com.bean.Customer -> customer1
+  16:45:51,188 DEBUG HbmBinder:1270 - Mapped property: userName -> userName
+  16:45:51,189 DEBUG HbmBinder:1270 - Mapped property: emailId -> emailId
+  16:45:51,191 DEBUG HbmBinder:1270 - Mapped property: complaints
+  16:45:51,192  INFO HbmBinder:300 - Mapping class: com.bean.Complaint -> complaint
+  16:45:51,192 DEBUG HbmBinder:1270 - Mapped property: complaintId -> complaintId
+  16:45:51,192 DEBUG HbmBinder:1270 - Mapped property: text -> text
+  16:45:51,193 DEBUG HbmBinder:1270 - Mapped property: status -> status
+  16:45:51,193 DEBUG HbmBinder:1270 - Mapped property: dateOfComplaint -> dateOfComplaint
+  16:45:51,193 DEBUG HbmBinder:1270 - Mapped property: customer -> userName
+  16:45:51,193  INFO Configuration:1541 - Configured SessionFactory: null
+  16:45:51,193 DEBUG Configuration:1542 - properties: {show_sql=true, java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 7, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_171\lib\resources.jar;C:\Program Files\Java\jre1.8.0_171\lib\rt.jar;C:\Program Files\Java\jre1.8.0_171\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_171\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_171\lib\jce.jar;C:\Program Files\Java\jre1.8.0_171\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_171\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_171\classes, hibernate.current_session_context_class=thread, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_171-b11, hibernate.connection.autocommit=true, hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider, user.name=jsheshashankar, connection.driver_class=oracle.jdbc.driver.OracleDriver, current_session_context_class=thread, user.language=en, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_171\bin, dialect=org.hibernate.dialect.Oracle10gDialect, java.version=1.8.0_171, user.timezone=Asia/Calcutta, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_171\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, user.country=US, connection.url=jdbc:oracle:thin:@localhost:1521:xe, java.home=C:\Program Files\Java\jre1.8.0_171, java.vm.info=mixed mode, os.version=6.1, path.separator=;, connection.password=shesha1096shankar, java.vm.version=25.171-b11, hibernate.connection.password=shesha1096shankar, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=shesha1096, user.script=, user.home=C:\Users\jsheshashankar, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=update, java.library.path=C:\Program Files\Java\jre1.8.0_171\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\eclipse-jee-mars-2-win32-x86_64 (1)\eclipse;;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, connection.username=shesha1096, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.clients.onetooneClient, java.class.path=C:\Users\jsheshashankar\workspace\HibernateDemos\build\classes;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\annotations-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-ant.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-ha.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-storeconfig.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-tribes.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\ecj-4.6.3.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\el-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\jasper-el.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\jasper.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\jsp-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\servlet-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-coyote.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-dbcp.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-i18n-es.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-i18n-fr.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-i18n-ja.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-jdbc.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-jni.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-util-scan.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-util.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-websocket.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\websocket-api.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\antlr-2.7.6.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\asm-attrs.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\asm.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\cglib-2.1.3.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\commons-collections-2.1.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\commons-logging-1.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\dom4j-1.6.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\ehcache.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\freemarker-2.3.8.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hibernate-annotations.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hibernate-commons-annotations.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hibernate3.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hsqldb.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\javax.persistence_1.0.0.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\jta.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\junit-3.8.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\log4j-1.2.11.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\mysql-connector-java-5.0.4-bin.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\ognl-2.6.11.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\ojdbc6-11.2.0.2.0.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\servlet-api.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\slf4j-api-1.5.6.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\slf4j-jdk14-1.5.6.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, hibernate.cache.use_query_cache=true, connection.pool_size=100, java.io.tmpdir=C:\Users\JSHESH~1\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jre1.8.0_171\lib\ext;C:\windows\Sun\Java\lib\ext, user.dir=C:\Users\jsheshashankar\workspace\HibernateDemos, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.cache.use_second_level_cache=true, cache.provider_class=org.hibernate.cache.EhCacheProvider, file.encoding=Cp1252, java.specification.version=1.8, hibernate.show_sql=true, hibernate.connection.pool_size=100}
+  16:45:51,195 DEBUG Configuration:1285 - Preparing to build session factory with filters : {}
+  16:45:51,195 DEBUG Configuration:1120 - processing extends queue
+  16:45:51,195 DEBUG Configuration:1124 - processing collection mappings
+  16:45:51,195 DEBUG CollectionSecondPass:41 - Second pass for collection: com.bean.Customer.complaints
+  16:45:51,196  INFO HbmBinder:2385 - Mapping collection: com.bean.Customer.complaints -> complaint
+  16:45:51,196 DEBUG CollectionSecondPass:57 - Mapped collection key: userName, index: idc, one-to-many: com.bean.Complaint
+  16:45:51,196 DEBUG Configuration:1135 - processing native query and ResultSetMapping mappings
+  16:45:51,196 DEBUG Configuration:1143 - processing association property references
+  16:45:51,197 DEBUG Configuration:1165 - processing foreign key constraints
+  16:45:51,197 DEBUG Configuration:1248 - resolving reference to class: com.bean.Customer
+  16:45:51,197 DEBUG Configuration:1248 - resolving reference to class: com.bean.Department
+  16:45:51,201  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+  16:45:51,201  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 100
+  16:45:51,201  INFO DriverManagerConnectionProvider:45 - autocommit mode: true
+  16:45:51,279  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+  16:45:51,279  INFO DriverManagerConnectionProvider:83 - connection properties: {user=shesha1096, password=shesha1096shankar, autocommit=true}
+  16:45:51,279 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  16:45:51,280 DEBUG DriverManagerConnectionProvider:109 - opening new JDBC connection
+  16:45:51,740 DEBUG DriverManagerConnectionProvider:115 - created connection to: jdbc:oracle:thin:@localhost:1521:xe, Isolation Level: 2
+  16:45:51,741  INFO SettingsFactory:89 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+  16:45:51,741  INFO SettingsFactory:90 - JDBC driver: Oracle JDBC driver, version: 11.2.0.2.0
+  16:45:51,741 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  16:45:51,751  INFO Dialect:152 - Using dialect: org.hibernate.dialect.Oracle10gDialect
+  16:45:51,754  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+  16:45:51,755  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+  16:45:51,755  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+  16:45:51,755  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+  16:45:51,755  INFO SettingsFactory:154 - JDBC batch size: 15
+  16:45:51,755  INFO SettingsFactory:157 - JDBC batch updates for versioned data: disabled
+  16:45:51,755  INFO SettingsFactory:162 - Scrollable result sets: enabled
+  16:45:51,755 DEBUG SettingsFactory:166 - Wrap result sets: disabled
+  16:45:51,756  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): disabled
+  16:45:51,756  INFO SettingsFactory:178 - Connection release mode: auto
+  16:45:51,756  INFO SettingsFactory:205 - Default batch fetch size: 1
+  16:45:51,756  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+  16:45:51,756  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+  16:45:51,756  INFO SettingsFactory:217 - Order SQL inserts for batching: disabled
+  16:45:51,756  INFO SettingsFactory:386 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+  16:45:51,757  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+  16:45:51,758  INFO SettingsFactory:225 - Query language substitutions: {}
+  16:45:51,758  INFO SettingsFactory:230 - JPA-QL strict compliance: disabled
+  16:45:51,758  INFO SettingsFactory:235 - Second-level cache: enabled
+  16:45:51,758  INFO SettingsFactory:239 - Query cache: enabled
+  16:45:51,758  INFO SettingsFactory:373 - Cache provider: org.hibernate.cache.EhCacheProvider
+  16:45:51,759  INFO SettingsFactory:254 - Optimize cache for minimal puts: disabled
+  16:45:51,759  INFO SettingsFactory:263 - Structured second-level cache entries: disabled
+  16:45:51,759  INFO SettingsFactory:360 - Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+  16:45:51,760 DEBUG SQLExceptionConverterFactory:52 - Using dialect defined converter
+  16:45:51,762  INFO SettingsFactory:283 - Echoing all SQL to stdout
+  16:45:51,762  INFO SettingsFactory:290 - Statistics: disabled
+  16:45:51,762  INFO SettingsFactory:294 - Deleted entity synthetic identifier rollback: disabled
+  16:45:51,762  INFO SettingsFactory:309 - Default entity-mode: pojo
+  16:45:51,763  INFO SettingsFactory:313 - Named query checking : enabled
+  16:45:51,777  INFO SessionFactoryImpl:161 - building session factory
+  16:45:51,777 DEBUG SessionFactoryImpl:173 - Session factory constructed with filter configurations : {}
+  16:45:51,778 DEBUG SessionFactoryImpl:177 - instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 7, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_171\lib\resources.jar;C:\Program Files\Java\jre1.8.0_171\lib\rt.jar;C:\Program Files\Java\jre1.8.0_171\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_171\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_171\lib\jce.jar;C:\Program Files\Java\jre1.8.0_171\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_171\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_171\classes, hibernate.current_session_context_class=thread, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_171-b11, hibernate.connection.autocommit=true, hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider, user.name=jsheshashankar, connection.driver_class=oracle.jdbc.driver.OracleDriver, current_session_context_class=thread, user.language=en, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_171\bin, dialect=org.hibernate.dialect.Oracle10gDialect, java.version=1.8.0_171, user.timezone=Asia/Calcutta, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_171\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, user.country=US, connection.url=jdbc:oracle:thin:@localhost:1521:xe, java.home=C:\Program Files\Java\jre1.8.0_171, java.vm.info=mixed mode, os.version=6.1, path.separator=;, connection.password=shesha1096shankar, java.vm.version=25.171-b11, hibernate.connection.password=shesha1096shankar, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=shesha1096, user.script=, user.home=C:\Users\jsheshashankar, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=update, java.library.path=C:\Program Files\Java\jre1.8.0_171\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\eclipse-jee-mars-2-win32-x86_64 (1)\eclipse;;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, connection.username=shesha1096, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.clients.onetooneClient, java.class.path=C:\Users\jsheshashankar\workspace\HibernateDemos\build\classes;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\annotations-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-ant.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-ha.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-storeconfig.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina-tribes.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\catalina.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\ecj-4.6.3.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\el-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\jasper-el.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\jasper.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\jsp-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\servlet-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-api.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-coyote.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-dbcp.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-i18n-es.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-i18n-fr.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-i18n-ja.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-jdbc.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-jni.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-util-scan.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-util.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\tomcat-websocket.jar;C:\Users\jsheshashankar\Desktop\Gurukul Softwaares- 02.07.2018\apache-tomcat-8.0.52\apache-tomcat-8.0.52\lib\websocket-api.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\antlr-2.7.6.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\asm-attrs.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\asm.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\cglib-2.1.3.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\commons-collections-2.1.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\commons-logging-1.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\dom4j-1.6.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\ehcache.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\freemarker-2.3.8.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hibernate-annotations.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hibernate-commons-annotations.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hibernate3.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\hsqldb.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\javax.persistence_1.0.0.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\jta.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\junit-3.8.1.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\log4j-1.2.11.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\mysql-connector-java-5.0.4-bin.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\ognl-2.6.11.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\ojdbc6-11.2.0.2.0.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\servlet-api.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\slf4j-api-1.5.6.jar;C:\Users\jsheshashankar\workspace\HibernateDemos\WebContent\WEB-INF\lib\slf4j-jdk14-1.5.6.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, hibernate.cache.use_query_cache=true, connection.pool_size=100, java.io.tmpdir=C:\Users\JSHESH~1\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jre1.8.0_171\lib\ext;C:\windows\Sun\Java\lib\ext, user.dir=C:\Users\jsheshashankar\workspace\HibernateDemos, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.cache.use_second_level_cache=true, cache.provider_class=org.hibernate.cache.EhCacheProvider, file.encoding=Cp1252, java.specification.version=1.8, hibernate.connection.pool_size=100, hibernate.show_sql=true}
+  16:45:51,781  WARN ConfigurationFactory:127 - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/jsheshashankar/workspace/HibernateDemos/WebContent/WEB-INF/lib/ehcache.jar!/ehcache-failsafe.xml
+  16:45:51,894 DEBUG AbstractEntityPersister:2738 - Static SQL for entity: com.bean.Address
+  16:45:51,894 DEBUG AbstractEntityPersister:2743 -  Version select: select addressId from address1 where addressId =?
+  16:45:51,894 DEBUG AbstractEntityPersister:2746 -  Snapshot select: select address_.addressId, address_.addressLine1 as addressL2_1_, address_.city as city1_, address_.state as state1_, address_.country as country1_ from address1 address_ where address_.addressId=?
+  16:45:51,894 DEBUG AbstractEntityPersister:2749 -  Insert 0: insert into address1 (addressLine1, city, state, country, addressId) values (?, ?, ?, ?, ?)
+  16:45:51,894 DEBUG AbstractEntityPersister:2750 -  Update 0: update address1 set addressLine1=?, city=?, state=?, country=? where addressId=?
+  16:45:51,894 DEBUG AbstractEntityPersister:2751 -  Delete 0: delete from address1 where addressId=?
+  16:45:51,898 DEBUG AbstractEntityPersister:2738 - Static SQL for entity: com.bean.Complaint
+  16:45:51,898 DEBUG AbstractEntityPersister:2743 -  Version select: select complaintId from complaint where complaintId =?
+  16:45:51,898 DEBUG AbstractEntityPersister:2746 -  Snapshot select: select complaint_.complaintId, complaint_.text as text4_, complaint_.status as status4_, complaint_.dateOfComplaint as dateOfCo4_4_, complaint_.userName as userName4_ from complaint complaint_ where complaint_.complaintId=?
+  16:45:51,898 DEBUG AbstractEntityPersister:2749 -  Insert 0: insert into complaint (text, status, dateOfComplaint, userName, complaintId) values (?, ?, ?, ?, ?)
+  16:45:51,898 DEBUG AbstractEntityPersister:2750 -  Update 0: update complaint set text=?, status=?, dateOfComplaint=?, userName=? where complaintId=?
+  16:45:51,898 DEBUG AbstractEntityPersister:2751 -  Delete 0: delete from complaint where complaintId=?
+  16:45:51,901 DEBUG AbstractEntityPersister:2738 - Static SQL for entity: com.bean.Department
+  16:45:51,901 DEBUG AbstractEntityPersister:2743 -  Version select: select deptId from department1 where deptId =?
+  16:45:51,901 DEBUG AbstractEntityPersister:2746 -  Snapshot select: select department_.deptId, department_.deptName as deptName2_ from department1 department_ where department_.deptId=?
+  16:45:51,901 DEBUG AbstractEntityPersister:2749 -  Insert 0: insert into department1 (deptName, deptId) values (?, ?)
+  16:45:51,901 DEBUG AbstractEntityPersister:2750 -  Update 0: update department1 set deptName=? where deptId=?
+  16:45:51,902 DEBUG AbstractEntityPersister:2751 -  Delete 0: delete from department1 where deptId=?
+  16:45:51,905 DEBUG AbstractEntityPersister:2738 - Static SQL for entity: com.bean.Employee
+  16:45:51,905 DEBUG AbstractEntityPersister:2743 -  Version select: select employeeId from employee1 where employeeId =?
+  16:45:51,905 DEBUG AbstractEntityPersister:2746 -  Snapshot select: select employee_.employeeId, employee_.name as name0_, employee_.email as email0_, employee_.department as department0_ from employee1 employee_ where employee_.employeeId=?
+  16:45:51,905 DEBUG AbstractEntityPersister:2749 -  Insert 0: insert into employee1 (name, email, department, employeeId) values (?, ?, ?, ?)
+  16:45:51,908 DEBUG AbstractEntityPersister:2750 -  Update 0: update employee1 set name=?, email=?, department=? where employeeId=?
+  16:45:51,908 DEBUG AbstractEntityPersister:2751 -  Delete 0: delete from employee1 where employeeId=?
+  16:45:51,912 DEBUG AbstractEntityPersister:2738 - Static SQL for entity: com.bean.Customer
+  16:45:51,912 DEBUG AbstractEntityPersister:2743 -  Version select: select userName from customer1 where userName =?
+  16:45:51,912 DEBUG AbstractEntityPersister:2746 -  Snapshot select: select customer_.userName, customer_.emailId as emailId3_ from customer1 customer_ where customer_.userName=?
+  16:45:51,912 DEBUG AbstractEntityPersister:2749 -  Insert 0: insert into customer1 (emailId, userName) values (?, ?)
+  16:45:51,912 DEBUG AbstractEntityPersister:2750 -  Update 0: update customer1 set emailId=? where userName=?
+  16:45:51,912 DEBUG AbstractEntityPersister:2751 -  Delete 0: delete from customer1 where userName=?
+  16:45:51,917 DEBUG AbstractCollectionPersister:548 - Static SQL for collection: com.bean.Customer.complaints
+  16:45:51,917 DEBUG AbstractCollectionPersister:550 -  Row insert: update complaint set userName=?, idc=? where complaintId=?
+  16:45:51,917 DEBUG AbstractCollectionPersister:556 -  Row delete: update complaint set userName=null, idc=null where userName=? and complaintId=?
+  16:45:51,917 DEBUG AbstractCollectionPersister:559 -  One-shot delete: update complaint set userName=null, idc=null where userName=?
+  16:45:51,927 DEBUG EntityLoader:79 - Static select for entity com.bean.Address: select address0_.addressId as addressId1_2_, address0_.addressLine1 as addressL2_1_2_, address0_.city as city1_2_, address0_.state as state1_2_, address0_.country as country1_2_, employee1_.employeeId as employeeId0_0_, employee1_.name as name0_0_, employee1_.email as email0_0_, employee1_.department as department0_0_, address2_.addressId as addressId1_1_, address2_.addressLine1 as addressL2_1_1_, address2_.city as city1_1_, address2_.state as state1_1_, address2_.country as country1_1_ from address1 address0_ left outer join employee1 employee1_ on address0_.addressId=employee1_.employeeId left outer join address1 address2_ on employee1_.employeeId=address2_.addressId where address0_.addressId=?
+  16:45:51,928 DEBUG EntityLoader:79 - Static select for entity com.bean.Address: select address0_.addressId as addressId1_2_, address0_.addressLine1 as addressL2_1_2_, address0_.city as city1_2_, address0_.state as state1_2_, address0_.country as country1_2_, employee1_.employeeId as employeeId0_0_, employee1_.name as name0_0_, employee1_.email as email0_0_, employee1_.department as department0_0_, address2_.addressId as addressId1_1_, address2_.addressLine1 as addressL2_1_1_, address2_.city as city1_1_, address2_.state as state1_1_, address2_.country as country1_1_ from address1 address0_ left outer join employee1 employee1_ on address0_.addressId=employee1_.employeeId left outer join address1 address2_ on employee1_.employeeId=address2_.addressId where address0_.addressId=?
+  16:45:51,928 DEBUG EntityLoader:79 - Static select for entity com.bean.Address: select address0_.addressId as addressId1_0_, address0_.addressLine1 as addressL2_1_0_, address0_.city as city1_0_, address0_.state as state1_0_, address0_.country as country1_0_ from address1 address0_ where address0_.addressId=? for update
+  16:45:51,928 DEBUG EntityLoader:79 - Static select for entity com.bean.Address: select address0_.addressId as addressId1_0_, address0_.addressLine1 as addressL2_1_0_, address0_.city as city1_0_, address0_.state as state1_0_, address0_.country as country1_0_ from address1 address0_ where address0_.addressId=? for update nowait
+  16:45:51,928 DEBUG EntityLoader:79 - Static select for entity com.bean.Address: select address0_.addressId as addressId1_0_, address0_.addressLine1 as addressL2_1_0_, address0_.city as city1_0_, address0_.state as state1_0_, address0_.country as country1_0_ from address1 address0_ where address0_.addressId=? for update nowait
+  16:45:51,932 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.bean.Address: select address0_.addressId as addressId1_0_, address0_.addressLine1 as addressL2_1_0_, address0_.city as city1_0_, address0_.state as state1_0_, address0_.country as country1_0_ from address1 address0_ where address0_.addressId=?
+  16:45:51,932 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.bean.Address: select address0_.addressId as addressId1_0_, address0_.addressLine1 as addressL2_1_0_, address0_.city as city1_0_, address0_.state as state1_0_, address0_.country as country1_0_ from address1 address0_ where address0_.addressId=?
+  16:45:51,932 DEBUG EntityLoader:79 - Static select for entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=?
+  16:45:51,933 DEBUG EntityLoader:79 - Static select for entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=?
+  16:45:51,933 DEBUG EntityLoader:79 - Static select for entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=? for update
+  16:45:51,933 DEBUG EntityLoader:79 - Static select for entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=? for update nowait
+  16:45:51,933 DEBUG EntityLoader:79 - Static select for entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=? for update nowait
+  16:45:51,933 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=?
+  16:45:51,934 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.bean.Complaint: select complaint0_.complaintId as complain1_4_0_, complaint0_.text as text4_0_, complaint0_.status as status4_0_, complaint0_.dateOfComplaint as dateOfCo4_4_0_, complaint0_.userName as userName4_0_ from complaint complaint0_ where complaint0_.complaintId=?
+  16:45:51,934 DEBUG EntityLoader:79 - Static select for entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=?
+  16:45:51,934 DEBUG EntityLoader:79 - Static select for entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=?
+  16:45:51,934 DEBUG EntityLoader:79 - Static select for entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=? for update
+  16:45:51,934 DEBUG EntityLoader:79 - Static select for entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=? for update nowait
+  16:45:51,935 DEBUG EntityLoader:79 - Static select for entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=? for update nowait
+  16:45:51,935 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=?
+  16:45:51,935 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.bean.Department: select department0_.deptId as deptId2_0_, department0_.deptName as deptName2_0_ from department1 department0_ where department0_.deptId=?
+  16:45:51,935 DEBUG EntityLoader:79 - Static select for entity com.bean.Employee: select employee0_.employeeId as employeeId0_2_, employee0_.name as name0_2_, employee0_.email as email0_2_, employee0_.department as department0_2_, address1_.addressId as addressId1_0_, address1_.addressLine1 as addressL2_1_0_, address1_.city as city1_0_, address1_.state as state1_0_, address1_.country as country1_0_, employee2_.employeeId as employeeId0_1_, employee2_.name as name0_1_, employee2_.email as email0_1_, employee2_.department as department0_1_ from employee1 employee0_ left outer join address1 address1_ on employee0_.employeeId=address1_.addressId left outer join employee1 employee2_ on address1_.addressId=employee2_.employeeId where employee0_.employeeId=?
+  16:45:51,935 DEBUG EntityLoader:79 - Static select for entity com.bean.Employee: select employee0_.employeeId as employeeId0_2_, employee0_.name as name0_2_, employee0_.email as email0_2_, employee0_.department as department0_2_, address1_.addressId as addressId1_0_, address1_.addressLine1 as addressL2_1_0_, address1_.city as city1_0_, address1_.state as state1_0_, address1_.country as country1_0_, employee2_.employeeId as employeeId0_1_, employee2_.name as name0_1_, employee2_.email as email0_1_, employee2_.department as department0_1_ from employee1 employee0_ left outer join address1 address1_ on employee0_.employeeId=address1_.addressId left outer join employee1 employee2_ on address1_.addressId=employee2_.employeeId where employee0_.employeeId=?
+  16:45:51,936 DEBUG EntityLoader:79 - Static select for entity com.bean.Employee: select employee0_.employeeId as employeeId0_0_, employee0_.name as name0_0_, employee0_.email as email0_0_, employee0_.department as department0_0_ from employee1 employee0_ where employee0_.employeeId=? for update
+  16:45:51,936 DEBUG EntityLoader:79 - Static select for entity com.bean.Employee: select employee0_.employeeId as employeeId0_0_, employee0_.name as name0_0_, employee0_.email as email0_0_, employee0_.department as department0_0_ from employee1 employee0_ where employee0_.employeeId=? for update nowait
+  16:45:51,936 DEBUG EntityLoader:79 - Static select for entity com.bean.Employee: select employee0_.employeeId as employeeId0_0_, employee0_.name as name0_0_, employee0_.email as email0_0_, employee0_.department as department0_0_ from employee1 employee0_ where employee0_.employeeId=? for update nowait
+  16:45:51,936 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.bean.Employee: select employee0_.employeeId as employeeId0_2_, employee0_.name as name0_2_, employee0_.email as email0_2_, employee0_.department as department0_2_, address1_.addressId as addressId1_0_, address1_.addressLine1 as addressL2_1_0_, address1_.city as city1_0_, address1_.state as state1_0_, address1_.country as country1_0_, department2_.deptId as deptId2_1_, department2_.deptName as deptName2_1_ from employee1 employee0_ left outer join address1 address1_ on employee0_.employeeId=address1_.addressId left outer join department1 department2_ on employee0_.department=department2_.deptId where employee0_.employeeId=?
+  16:45:51,936 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.bean.Employee: select employee0_.employeeId as employeeId0_2_, employee0_.name as name0_2_, employee0_.email as email0_2_, employee0_.department as department0_2_, address1_.addressId as addressId1_0_, address1_.addressLine1 as addressL2_1_0_, address1_.city as city1_0_, address1_.state as state1_0_, address1_.country as country1_0_, department2_.deptId as deptId2_1_, department2_.deptName as deptName2_1_ from employee1 employee0_ left outer join address1 address1_ on employee0_.employeeId=address1_.addressId left outer join department1 department2_ on employee0_.department=department2_.deptId where employee0_.employeeId=?
+  16:45:51,937 DEBUG EntityLoader:79 - Static select for entity com.bean.Customer: select customer0_.userName as userName3_0_, customer0_.emailId as emailId3_0_ from customer1 customer0_ where customer0_.userName=?
+  16:45:51,937 DEBUG EntityLoader:79 - Static select for entity com.bean.Customer: select customer0_.userName as userName3_0_, customer0_.emailId as emailId3_0_ from customer1 customer0_ where customer0_.userName=?
+  16:45:51,937 DEBUG EntityLoader:79 - Static select for entity com.bean.Customer: select customer0_.userName as userName3_0_, customer0_.emailId as emailId3_0_ from customer1 customer0_ where customer0_.userName=? for update
+  16:45:51,937 DEBUG EntityLoader:79 - Static select for entity com.bean.Customer: select customer0_.userName as userName3_0_, customer0_.emailId as emailId3_0_ from customer1 customer0_ where customer0_.userName=? for update nowait
+  16:45:51,937 DEBUG EntityLoader:79 - Static select for entity com.bean.Customer: select customer0_.userName as userName3_0_, customer0_.emailId as emailId3_0_ from customer1 customer0_ where customer0_.userName=? for update nowait
+  16:45:51,939 DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.bean.Customer: select customer0_.userName as userName3_1_, customer0_.emailId as emailId3_1_, complaints1_.userName as userName3_, complaints1_.complaintId as complain1_3_, complaints1_.idc as idc3_, complaints1_.complaintId as complain1_4_0_, complaints1_.text as text4_0_, complaints1_.status as status4_0_, complaints1_.dateOfComplaint as dateOfCo4_4_0_, complaints1_.userName as userName4_0_ from customer1 customer0_ left outer join complaint complaints1_ on customer0_.userName=complaints1_.userName where customer0_.userName=?
+  16:45:51,939 DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.bean.Customer: select customer0_.userName as userName3_1_, customer0_.emailId as emailId3_1_, complaints1_.userName as userName3_, complaints1_.complaintId as complain1_3_, complaints1_.idc as idc3_, complaints1_.complaintId as complain1_4_0_, complaints1_.text as text4_0_, complaints1_.status as status4_0_, complaints1_.dateOfComplaint as dateOfCo4_4_0_, complaints1_.userName as userName4_0_ from customer1 customer0_ left outer join complaint complaints1_ on customer0_.userName=complaints1_.userName where customer0_.userName=?
+  16:45:51,941 DEBUG OneToManyLoader:64 - Static select for one-to-many com.bean.Customer.complaints: select complaints0_.userName as userName1_, complaints0_.complaintId as complain1_1_, complaints0_.idc as idc1_, complaints0_.complaintId as complain1_4_0_, complaints0_.text as text4_0_, complaints0_.status as status4_0_, complaints0_.dateOfComplaint as dateOfCo4_4_0_, complaints0_.userName as userName4_0_ from complaint complaints0_ where complaints0_.userName=?
+  16:45:51,943 DEBUG SessionFactoryObjectFactory:39 - initializing class SessionFactoryObjectFactory
+  16:45:51,944 DEBUG SessionFactoryObjectFactory:76 - registered: 8ad0a18b64cc00a50164cc00a6050000 (unnamed)
+  16:45:51,945  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+  16:45:51,945 DEBUG SessionFactoryImpl:308 - instantiated session factory
+  16:45:51,946  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+  16:45:51,947  INFO SchemaUpdate:126 - fetching database metadata
+  16:45:51,947 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  16:45:51,947 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  16:45:52,002  INFO SchemaUpdate:138 - updating schema
+  16:45:52,002 DEBUG Configuration:1120 - processing extends queue
+  16:45:52,002 DEBUG Configuration:1124 - processing collection mappings
+  16:45:52,002 DEBUG Configuration:1135 - processing native query and ResultSetMapping mappings
+  16:45:52,002 DEBUG Configuration:1143 - processing association property references
+  16:45:52,002 DEBUG Configuration:1165 - processing foreign key constraints
+  16:45:52,002 DEBUG Configuration:1248 - resolving reference to class: com.bean.Customer
+  16:45:52,002 DEBUG Configuration:1248 - resolving reference to class: com.bean.Department
+  16:45:52,055  INFO TableMetadata:39 - table found: SHESHA1096.ADDRESS1
+  16:45:52,055  INFO TableMetadata:40 - columns: [country, city, addressline1, state, addressid]
+  16:45:52,055  INFO TableMetadata:42 - foreign keys: []
+  16:45:52,055  INFO TableMetadata:43 - indexes: [sys_c007129]
+  16:45:52,065  INFO TableMetadata:39 - table found: SHESHA1096.COMPLAINT
+  16:45:52,065  INFO TableMetadata:40 - columns: [complaintid, dateofcomplaint, idc, text, status, username]
+  16:45:52,065  INFO TableMetadata:42 - foreign keys: [fkac5efcab4e1cf7a5]
+  16:45:52,065  INFO TableMetadata:43 - indexes: [sys_c007138]
+  16:45:52,073  INFO TableMetadata:39 - table found: SHESHA1096.CUSTOMER1
+  16:45:52,073  INFO TableMetadata:40 - columns: [emailid, username]
+  16:45:52,073  INFO TableMetadata:42 - foreign keys: []
+  16:45:52,073  INFO TableMetadata:43 - indexes: [sys_c007131]
+  16:45:52,081  INFO TableMetadata:39 - table found: SHESHA1096.DEPARTMENT1
+  16:45:52,081  INFO TableMetadata:40 - columns: [deptid, deptname]
+  16:45:52,081  INFO TableMetadata:42 - foreign keys: []
+  16:45:52,081  INFO TableMetadata:43 - indexes: [sys_c007133]
+  16:45:52,090  INFO TableMetadata:39 - table found: SHESHA1096.EMPLOYEE1
+  16:45:52,090  INFO TableMetadata:40 - columns: [name, department, employeeid, email]
+  16:45:52,090  INFO TableMetadata:42 - foreign keys: [fk9d39ef43722e7d55]
+  16:45:52,090  INFO TableMetadata:43 - indexes: [sys_c007135]
+  16:45:52,090  INFO SchemaUpdate:160 - schema update complete
+  16:45:52,091 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  16:45:52,095  INFO UpdateTimestampsCache:41 - starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+  16:45:52,095  WARN EhCacheProvider:86 - Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+  16:45:52,104 DEBUG EhCacheProvider:89 - started EHCache region: org.hibernate.cache.UpdateTimestampsCache
+  16:45:52,105  INFO StandardQueryCache:52 - starting query cache at region: org.hibernate.cache.StandardQueryCache
+  16:45:52,105  WARN EhCacheProvider:86 - Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+  16:45:52,106 DEBUG EhCacheProvider:89 - started EHCache region: org.hibernate.cache.StandardQueryCache
+  16:45:52,106 DEBUG SessionFactoryImpl:392 - Checking 0 named HQL queries
+  16:45:52,106 DEBUG SessionFactoryImpl:412 - Checking 0 named SQL queries
+  16:45:52,123 DEBUG SessionImpl:220 - opened session at timestamp: 6276837179830272
+  16:45:52,124 DEBUG JDBCTransaction:54 - begin
+  16:45:52,124 DEBUG ConnectionManager:421 - opening JDBC connection
+  16:45:52,124 DEBUG DriverManagerConnectionProvider:93 - total checked-out connections: 0
+  16:45:52,124 DEBUG DriverManagerConnectionProvider:99 - using pooled JDBC connection, pool size: 0
+  16:45:52,124 DEBUG JDBCTransaction:59 - current autocommit status: true
+  16:45:52,124 DEBUG JDBCTransaction:62 - disabling autocommit
+  16:45:52,125 DEBUG JDBCContext:210 - after transaction begin
+  16:45:52,126 DEBUG QueryPlanCache:70 - unable to locate HQL query plan in cache; generating (from Customer as customer where customer.userName=?)
+  16:45:52,154 DEBUG QueryTranslatorImpl:246 - parse() - HQL: from com.bean.Customer as customer where customer.userName=?
+  16:45:52,165 DEBUG AST:266 - --- HQL AST ---
+ \-[QUERY] 'query'
+    +-[SELECT_FROM] 'SELECT_FROM'
+    |  \-[FROM] 'from'
+    |     \-[RANGE] 'RANGE'
+    |        +-[DOT] '.'
+    |        |  +-[DOT] '.'
+    |        |  |  +-[IDENT] 'com'
+    |        |  |  \-[IDENT] 'bean'
+    |        |  \-[IDENT] 'Customer'
+    |        \-[ALIAS] 'customer'
+    \-[WHERE] 'where'
+       \-[EQ] '='
+          +-[DOT] '.'
+          |  +-[IDENT] 'customer'
+          |  \-[IDENT] 'userName'
+          \-[PARAM] '?'
+
+  16:45:52,166 DEBUG ErrorCounter:68 - throwQueryException() : no errors
+  16:45:52,185 DEBUG HqlSqlBaseWalker:111 - select << begin [level=1, statement=select]
+  16:45:52,193 DEBUG FromElement:108 - FromClause{level=1} :  com.bean.Customer (customer) -> customer0_
+  16:45:52,195 DEBUG FromReferenceNode:51 - Resolved :  customer -> customer0_.userName
+  16:45:52,195 DEBUG FromElement:525 - handling property dereference [com.bean.Customer (customer) -> userName (class)]
+  16:45:52,196 DEBUG DotNode:568 - getDataType() : userName -> org.hibernate.type.StringType@352ff4da
+  16:45:52,196 DEBUG FromReferenceNode:51 - Resolved :  customer.userName -> customer0_.userName
+  16:45:52,198 DEBUG HqlSqlBaseWalker:117 - select : finishing up [level=1, statement=select]
+  16:45:52,198 DEBUG HqlSqlWalker:509 - processQuery() :  ( SELECT ( FromClause{level=1} customer1 customer0_ ) ( where ( = ( customer0_.userName customer0_.userName userName ) ? ) ) )
+  16:45:52,201 DEBUG HqlSqlWalker:716 - Derived SELECT clause created.
+  16:45:52,204 DEBUG JoinProcessor:148 - Using FROM fragment [customer1 customer0_]
+  16:45:52,204 DEBUG HqlSqlBaseWalker:123 - select >> end [level=1, statement=select]
+  16:45:52,206 DEBUG AST:232 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (customer1)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'customer0_.userName as userName3_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=customer,role=null,tableName=customer1,tableAlias=customer0_,origin=null,colums={,className=com.bean.Customer}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'customer0_.emailId as emailId3_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[customer], fromElementByTableAlias=[customer0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'customer1 customer0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=customer,role=null,tableName=customer1,tableAlias=customer0_,origin=null,colums={,className=com.bean.Customer}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'customer0_.userName' {propertyName=userName,dereferenceType=4,propertyPath=userName,path=customer.userName,tableAlias=customer0_,className=com.bean.Customer,classAlias=customer}
+          |  +-[ALIAS_REF] IdentNode: 'customer0_.userName' {alias=customer, className=com.bean.Customer, tableAlias=customer0_}
+          |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
+          \-[PARAM] ParameterNode: '?' {ordinal=0, expectedType=org.hibernate.type.StringType@352ff4da}
+
+  16:45:52,206 DEBUG ErrorCounter:68 - throwQueryException() : no errors
+  16:45:52,212 DEBUG QueryTranslatorImpl:216 - HQL: from com.bean.Customer as customer where customer.userName=?
+  16:45:52,212 DEBUG QueryTranslatorImpl:217 - SQL: select customer0_.userName as userName3_, customer0_.emailId as emailId3_ from customer1 customer0_ where customer0_.userName=?
+  16:45:52,212 DEBUG ErrorCounter:68 - throwQueryException() : no errors
+  16:45:52,216 DEBUG HQLQueryPlan:269 - HQL param location recognition took 1 mills (from Customer as customer where customer.userName=?)
+  16:45:52,220 DEBUG QueryPlanCache:76 - located HQL query plan in cache (from Customer as customer where customer.userName=?)
+  16:45:52,220 DEBUG HQLQueryPlan:150 - find: from Customer as customer where customer.userName=?
+  16:45:52,221 DEBUG QueryParameters:271 - parameters: [shesha]
+  16:45:52,221 DEBUG QueryParameters:277 - named parameters: {}
+  16:45:52,222 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  16:45:52,222 DEBUG SQL:401 - select customer0_.userName as userName3_, customer0_.emailId as emailId3_ from customer1 customer0_ where customer0_.userName=?
+  16:45:52,223 DEBUG AbstractBatcher:484 - preparing statement
+  16:45:52,223 DEBUG StringType:133 - binding 'shesha' to parameter: 1
+  16:45:52,224 DEBUG AbstractBatcher:382 - about to open ResultSet (open ResultSets: 0, globally: 0)
+  16:45:52,224 DEBUG Loader:694 - processing result set
+  16:45:52,224 DEBUG Loader:699 - result set row: 0
+  16:45:52,224 DEBUG StringType:172 - returning 'shesha' as column: userName3_
+  16:45:52,225 DEBUG Loader:1173 - result row: EntityKey[com.bean.Customer#shesha]
+  16:45:52,226 DEBUG Loader:1355 - Initializing object from ResultSet: [com.bean.Customer#shesha]
+  16:45:52,228 DEBUG AbstractEntityPersister:2031 - Hydrating entity: [com.bean.Customer#shesha]
+  16:45:52,229 DEBUG StringType:172 - returning 'shesha1096@gmail.com' as column: emailId3_
+  16:45:52,229 DEBUG Loader:721 - done processing result set (1 rows)
+  16:45:52,229 DEBUG AbstractBatcher:389 - about to close ResultSet (open ResultSets: 1, globally: 1)
+  16:45:52,229 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  16:45:52,230 DEBUG AbstractBatcher:533 - closing statement
+  16:45:52,230 DEBUG Loader:851 - total objects hydrated: 1
+  16:45:52,230 DEBUG TwoPhaseLoad:107 - resolving associations for [com.bean.Customer#shesha]
+  16:45:52,232 DEBUG LoadContexts:183 - creating collection wrapper:[com.bean.Customer.complaints#shesha]
+  16:45:52,236 DEBUG TwoPhaseLoad:206 - done materializing entity [com.bean.Customer#shesha]
+  16:45:52,236 DEBUG StatefulPersistenceContext:790 - initializing non-lazy collections
+  16:45:52,236 DEBUG DefaultInitializeCollectionEventListener:41 - initializing collection [com.bean.Customer.complaints#shesha]
+  16:45:52,236 DEBUG DefaultInitializeCollectionEventListener:47 - checking second-level cache
+  16:45:52,237 DEBUG DefaultInitializeCollectionEventListener:59 - collection not cached
+  16:45:52,237 DEBUG Loader:1986 - loading collection: [com.bean.Customer.complaints#shesha]
+  16:45:52,237 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+  16:45:52,237 DEBUG SQL:401 - select complaints0_.userName as userName1_, complaints0_.complaintId as complain1_1_, complaints0_.idc as idc1_, complaints0_.complaintId as complain1_4_0_, complaints0_.text as text4_0_, complaints0_.status as status4_0_, complaints0_.dateOfComplaint as dateOfCo4_4_0_, complaints0_.userName as userName4_0_ from complaint complaints0_ where complaints0_.userName=?
+  16:45:52,237 DEBUG AbstractBatcher:484 - preparing statement
+  16:45:52,237 DEBUG StringType:133 - binding 'shesha' to parameter: 1
+  16:45:52,239 DEBUG AbstractBatcher:382 - about to open ResultSet (open ResultSets: 0, globally: 0)
+  16:45:52,239 DEBUG Loader:1054 - result set contains (possibly empty) collection: [com.bean.Customer.complaints#shesha]
+  16:45:52,239 DEBUG LoadContexts:156 - constructing collection load context for result set [oracle.jdbc.driver.OracleResultSetImpl@1a72a540]
+  16:45:52,240 DEBUG CollectionLoadContext:90 - starting attempt to find loading collection [[com.bean.Customer.complaints#shesha]]
+  16:45:52,241 DEBUG CollectionLoadContext:103 - collection not yet initialized; initializing
+  16:45:52,241 DEBUG Loader:694 - processing result set
+  16:45:52,241 DEBUG Loader:699 - result set row: 0
+  16:45:52,241 DEBUG LongType:172 - returning '13' as column: complain1_4_0_
+  16:45:52,241 DEBUG Loader:1173 - result row: EntityKey[com.bean.Complaint#13]
+  16:45:52,242 DEBUG Loader:1355 - Initializing object from ResultSet: [com.bean.Complaint#13]
+  16:45:52,242 DEBUG AbstractEntityPersister:2031 - Hydrating entity: [com.bean.Complaint#13]
+  16:45:52,242 DEBUG StringType:172 - returning 'Internet not working' as column: text4_0_
+  16:45:52,242 DEBUG StringType:172 - returning 'NR' as column: status4_0_
+  16:45:52,247 DEBUG DateType:172 - returning '02 October 2018' as column: dateOfCo4_4_0_
+  16:45:52,247 DEBUG StringType:172 - returning 'shesha' as column: userName4_0_
+  16:45:52,248 DEBUG StringType:172 - returning 'shesha' as column: userName1_
+  16:45:52,248 DEBUG Loader:985 - found row of collection: [com.bean.Customer.complaints#shesha]
+  16:45:52,248 DEBUG CollectionLoadContext:90 - starting attempt to find loading collection [[com.bean.Customer.complaints#shesha]]
+  16:45:52,248 DEBUG LoadContexts:258 - attempting to locate loading collection entry [CollectionKey[com.bean.Customer.complaints#shesha]] in any result-set context
+  16:45:52,248 DEBUG LoadContexts:266 - collection [CollectionKey[com.bean.Customer.complaints#shesha]] not located in load context
+  16:45:52,248 DEBUG CollectionLoadContext:134 - found loading collection bound to current result set processing; reading row
+  16:45:52,248 DEBUG LongType:172 - returning '13' as column: complain1_1_
+  16:45:52,249 DEBUG DefaultLoadEventListener:171 - loading entity: [com.bean.Complaint#13]
+  16:45:52,249 DEBUG DefaultLoadEventListener:332 - attempting to resolve: [com.bean.Complaint#13]
+  16:45:52,249 DEBUG DefaultLoadEventListener:349 - resolved object in session cache: [com.bean.Complaint#13]
+  16:45:52,250 DEBUG IntegerType:172 - returning '0' as column: idc1_
+  16:45:52,250 DEBUG Loader:699 - result set row: 1
+  16:45:52,250 DEBUG LongType:172 - returning '14' as column: complain1_4_0_
+  16:45:52,250 DEBUG Loader:1173 - result row: EntityKey[com.bean.Complaint#14]
+  16:45:52,250 DEBUG Loader:1355 - Initializing object from ResultSet: [com.bean.Complaint#14]
+  16:45:52,250 DEBUG AbstractEntityPersister:2031 - Hydrating entity: [com.bean.Complaint#14]
+  16:45:52,250 DEBUG StringType:172 - returning 'Server Down' as column: text4_0_
+  16:45:52,251 DEBUG StringType:172 - returning 'R' as column: status4_0_
+  16:45:52,251 DEBUG DateType:172 - returning '02 October 2018' as column: dateOfCo4_4_0_
+  16:45:52,252 DEBUG StringType:172 - returning 'shesha' as column: userName4_0_
+  16:45:52,252 DEBUG StringType:172 - returning 'shesha' as column: userName1_
+  16:45:52,252 DEBUG Loader:985 - found row of collection: [com.bean.Customer.complaints#shesha]
+  16:45:52,252 DEBUG CollectionLoadContext:90 - starting attempt to find loading collection [[com.bean.Customer.complaints#shesha]]
+  16:45:52,252 DEBUG LoadContexts:258 - attempting to locate loading collection entry [CollectionKey[com.bean.Customer.complaints#shesha]] in any result-set context
+  16:45:52,252 DEBUG LoadContexts:266 - collection [CollectionKey[com.bean.Customer.complaints#shesha]] not located in load context
+  16:45:52,252 DEBUG CollectionLoadContext:134 - found loading collection bound to current result set processing; reading row
+  16:45:52,252 DEBUG LongType:172 - returning '14' as column: complain1_1_
+  16:45:52,252 DEBUG DefaultLoadEventListener:171 - loading entity: [com.bean.Complaint#14]
+  16:45:52,253 DEBUG DefaultLoadEventListener:332 - attempting to resolve: [com.bean.Complaint#14]
+  16:45:52,253 DEBUG DefaultLoadEventListener:349 - resolved object in session cache: [com.bean.Complaint#14]
+  16:45:52,253 DEBUG IntegerType:172 - returning '1' as column: idc1_
+  16:45:52,253 DEBUG Loader:699 - result set row: 2
+  16:45:52,253 DEBUG LongType:172 - returning '15' as column: complain1_4_0_
+  16:45:52,253 DEBUG Loader:1173 - result row: EntityKey[com.bean.Complaint#15]
+  16:45:52,253 DEBUG Loader:1355 - Initializing object from ResultSet: [com.bean.Complaint#15]
+  16:45:52,253 DEBUG AbstractEntityPersister:2031 - Hydrating entity: [com.bean.Complaint#15]
+  16:45:52,253 DEBUG StringType:172 - returning 'System down' as column: text4_0_
+  16:45:52,254 DEBUG StringType:172 - returning 'NR' as column: status4_0_
+  16:45:52,254 DEBUG DateType:172 - returning '02 October 2018' as column: dateOfCo4_4_0_
+  16:45:52,254 DEBUG StringType:172 - returning 'shesha' as column: userName4_0_
+  16:45:52,254 DEBUG StringType:172 - returning 'shesha' as column: userName1_
+  16:45:52,254 DEBUG Loader:985 - found row of collection: [com.bean.Customer.complaints#shesha]
+  16:45:52,254 DEBUG CollectionLoadContext:90 - starting attempt to find loading collection [[com.bean.Customer.complaints#shesha]]
+  16:45:52,254 DEBUG LoadContexts:258 - attempting to locate loading collection entry [CollectionKey[com.bean.Customer.complaints#shesha]] in any result-set context
+  16:45:52,255 DEBUG LoadContexts:266 - collection [CollectionKey[com.bean.Customer.complaints#shesha]] not located in load context
+  16:45:52,255 DEBUG CollectionLoadContext:134 - found loading collection bound to current result set processing; reading row
+  16:45:52,255 DEBUG LongType:172 - returning '15' as column: complain1_1_
+  16:45:52,255 DEBUG DefaultLoadEventListener:171 - loading entity: [com.bean.Complaint#15]
+  16:45:52,255 DEBUG DefaultLoadEventListener:332 - attempting to resolve: [com.bean.Complaint#15]
+  16:45:52,255 DEBUG DefaultLoadEventListener:349 - resolved object in session cache: [com.bean.Complaint#15]
+  16:45:52,255 DEBUG IntegerType:172 - returning '2' as column: idc1_
+  16:45:52,256 DEBUG Loader:721 - done processing result set (3 rows)
+  16:45:52,256 DEBUG AbstractBatcher:389 - about to close ResultSet (open ResultSets: 1, globally: 1)
+  16:45:52,256 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+  16:45:52,256 DEBUG AbstractBatcher:533 - closing statement
+  16:45:52,256 DEBUG Loader:851 - total objects hydrated: 3
+  16:45:52,256 DEBUG TwoPhaseLoad:107 - resolving associations for [com.bean.Complaint#13]
+  16:45:52,256 DEBUG DefaultLoadEventListener:171 - loading entity: [com.bean.Customer#shesha]
+  16:45:52,256 DEBUG DefaultLoadEventListener:244 - entity found in session cache
+  16:45:52,257 DEBUG TwoPhaseLoad:206 - done materializing entity [com.bean.Complaint#13]
+  16:45:52,257 DEBUG TwoPhaseLoad:107 - resolving associations for [com.bean.Complaint#14]
+  16:45:52,257 DEBUG DefaultLoadEventListener:171 - loading entity: [com.bean.Customer#shesha]
+  16:45:52,257 DEBUG DefaultLoadEventListener:244 - entity found in session cache
+  16:45:52,257 DEBUG TwoPhaseLoad:206 - done materializing entity [com.bean.Complaint#14]
+  16:45:52,257 DEBUG TwoPhaseLoad:107 - resolving associations for [com.bean.Complaint#15]
+  16:45:52,257 DEBUG DefaultLoadEventListener:171 - loading entity: [com.bean.Customer#shesha]
+  16:45:52,257 DEBUG DefaultLoadEventListener:244 - entity found in session cache
+  16:45:52,258 DEBUG TwoPhaseLoad:206 - done materializing entity [com.bean.Complaint#15]
+  16:45:52,258 DEBUG LoadContexts:258 - attempting to locate loading collection entry [CollectionKey[com.bean.Customer.complaints#shesha]] in any result-set context
+  16:45:52,258 DEBUG LoadContexts:266 - collection [CollectionKey[com.bean.Customer.complaints#shesha]] not located in load context
+  16:45:52,258 DEBUG CollectionLoadContext:186 - removing collection load entry [org.hibernate.engine.loading.LoadingCollectionEntry<rs=oracle.jdbc.driver.OracleResultSetImpl@1a72a540, coll=[com.bean.Customer.complaints#shesha]>@571c5681]
+  16:45:52,258 DEBUG CollectionLoadContext:217 - 1 collections were found in result set for role: com.bean.Customer.complaints
+  16:45:52,258 DEBUG CollectionLoadContext:232 - ending loading collection [org.hibernate.engine.loading.LoadingCollectionEntry<rs=oracle.jdbc.driver.OracleResultSetImpl@1a72a540, coll=[com.bean.Customer.complaints#shesha]>@571c5681]
+  16:45:52,258 DEBUG CollectionLoadContext:260 - collection fully initialized: [com.bean.Customer.complaints#shesha]
+  16:45:52,259 DEBUG CollectionLoadContext:226 - 1 collections initialized for role: com.bean.Customer.complaints
+  16:45:52,259 DEBUG StatefulPersistenceContext:790 - initializing non-lazy collections
+  16:45:52,259 DEBUG Loader:2010 - done loading collection
+  16:45:52,259 DEBUG DefaultInitializeCollectionEventListener:61 - collection initialized
+  16:45:52,260 DEBUG JDBCTransaction:103 - commit
+  16:45:52,260 DEBUG SessionImpl:337 - automatically flushing session
+  16:45:52,260 DEBUG AbstractFlushingEventListener:58 - flushing session
+  16:45:52,260 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+  16:45:52,262 DEBUG Cascade:115 - processing cascade ACTION_SAVE_UPDATE for: com.bean.Customer
+  16:45:52,262 DEBUG Cascade:291 - cascade ACTION_SAVE_UPDATE for collection: com.bean.Customer.complaints
+  16:45:52,262 DEBUG CascadingAction:216 - cascading to saveOrUpdate: com.bean.Complaint
+  16:45:52,263 DEBUG AbstractSaveEventListener:488 - persistent instance of: com.bean.Complaint
+  16:45:52,263 DEBUG DefaultSaveOrUpdateEventListener:99 - ignoring persistent instance
+  16:45:52,264 DEBUG DefaultSaveOrUpdateEventListener:136 - object already associated with session: [com.bean.Complaint#13]
+  16:45:52,264 DEBUG CascadingAction:216 - cascading to saveOrUpdate: com.bean.Complaint
+  16:45:52,264 DEBUG AbstractSaveEventListener:488 - persistent instance of: com.bean.Complaint
+  16:45:52,264 DEBUG DefaultSaveOrUpdateEventListener:99 - ignoring persistent instance
+  16:45:52,264 DEBUG DefaultSaveOrUpdateEventListener:136 - object already associated with session: [com.bean.Complaint#14]
+  16:45:52,264 DEBUG CascadingAction:216 - cascading to saveOrUpdate: com.bean.Complaint
+  16:45:52,264 DEBUG AbstractSaveEventListener:488 - persistent instance of: com.bean.Complaint
+  16:45:52,264 DEBUG DefaultSaveOrUpdateEventListener:99 - ignoring persistent instance
+  16:45:52,264 DEBUG DefaultSaveOrUpdateEventListener:136 - object already associated with session: [com.bean.Complaint#15]
+  16:45:52,265 DEBUG Cascade:306 - done cascade ACTION_SAVE_UPDATE for collection: com.bean.Customer.complaints
+  16:45:52,265 DEBUG Cascade:150 - done processing cascade ACTION_SAVE_UPDATE for: com.bean.Customer
+  16:45:52,265 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+  16:45:52,265 DEBUG AbstractFlushingEventListener:171 - Flushing entities and processing referenced collections
+  16:45:52,268 DEBUG Collections:176 - Collection found: [com.bean.Customer.complaints#shesha], was: [com.bean.Customer.complaints#shesha] (initialized)
+  16:45:52,268 DEBUG AbstractFlushingEventListener:210 - Processing unreferenced collections
+  16:45:52,268 DEBUG AbstractFlushingEventListener:224 - Scheduling collection removes/(re)creates/updates
+  16:45:52,269 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+  16:45:52,269 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+  16:45:52,269 DEBUG Printer:83 - listing entities:
+  16:45:52,269 DEBUG Printer:90 - com.bean.Complaint{complaintId=13, text=Internet not working, dateOfComplaint=02 October 2018, status=NR, customer=com.bean.Customer#shesha}
+  16:45:52,269 DEBUG Printer:90 - com.bean.Customer{complaints=[com.bean.Complaint#13, com.bean.Complaint#14, com.bean.Complaint#15], emailId=shesha1096@gmail.com, userName=shesha}
+  16:45:52,270 DEBUG Printer:90 - com.bean.Complaint{complaintId=14, text=Server Down, dateOfComplaint=02 October 2018, status=R, customer=com.bean.Customer#shesha}
+  16:45:52,270 DEBUG Printer:90 - com.bean.Complaint{complaintId=15, text=System down, dateOfComplaint=02 October 2018, status=NR, customer=com.bean.Customer#shesha}
+  16:45:52,270 DEBUG AbstractFlushingEventListener:290 - executing flush
+  16:45:52,270 DEBUG ConnectionManager:469 - registering flush begin
+  16:45:52,270 DEBUG ConnectionManager:478 - registering flush end
+  16:45:52,270 DEBUG AbstractFlushingEventListener:321 - post flush
+  16:45:52,270 DEBUG JDBCContext:201 - before transaction completion
+  16:45:52,271 DEBUG SessionImpl:393 - before transaction completion
+  16:45:52,271 DEBUG JDBCTransaction:193 - re-enabling autocommit
+  16:45:52,271 DEBUG JDBCTransaction:116 - committed JDBC Connection
+  16:45:52,271 DEBUG JDBCContext:215 - after transaction completion
+  16:45:52,271 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+  16:45:52,272 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+  16:45:52,272 DEBUG DriverManagerConnectionProvider:129 - returning connection to pool, pool size: 1
+  16:45:52,272 DEBUG SessionImpl:422 - after transaction completion
+  

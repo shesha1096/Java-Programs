@@ -1,0 +1,2 @@
+127.0.0.1 - - [23/Jul/2018:11:51:55 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Jul/2018:11:52:00 +0530] "GET /HibernateDemos/WEB-INF/classes/com/clients/BookClient.java HTTP/1.1" 404 992

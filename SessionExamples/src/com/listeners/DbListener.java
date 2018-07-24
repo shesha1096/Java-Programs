@@ -1,0 +1,38 @@
+package com.listeners;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+/**
+ * Application Lifecycle Listener implementation class DbListener
+ *
+ */
+@WebListener
+public class DbListener implements ServletContextListener {
+
+    /**
+     * Default constructor. 
+     */
+    public DbListener() {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
+     */
+    public void contextDestroyed(ServletContextEvent event)  { 
+         // TODO Auto-generated method stub
+    	System.out.println("Context Destroyed");
+    }
+
+	/**
+     * @see ServletContextListener#contextInitialized(ServletContextEvent)
+     */
+    public void contextInitialized(ServletContextEvent event)  { 
+         // TODO Auto-generated method stub
+    	System.out.println("Context Initialized");
+    	
+    }
+	
+}

@@ -1,0 +1,33 @@
+package com.clients;
+
+import java.sql.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.bean.Book;
+
+public class BookClient {
+	private static SessionFactory sessionFactory;
+	static{
+		Configuration config = new Configuration();
+		config.configure("/hibernate.cfg.xml");
+		sessionFactory = config.buildSessionFactory();
+	}
+	public  boolean addBook(String bookIsbn,String authorName,String bookName,Long stock,Double price,Date dateOfPublication)
+	{
+		Session session = sessionFactory.openSession();
+		Book book = new Book(bookIsbn,bookName,authorName,price,stock,dateOfPublication);
+		session.save(book);
+		session.flush();
+		return true;
+	}
+	public static void main(String[] args)
+	{
+		BookClient bookClient = new BookClient();
+		bookClient.addBook("3214", "Shesha", "Programming with Android", 50L, 700.00, null);
+		
+	}
+
+}

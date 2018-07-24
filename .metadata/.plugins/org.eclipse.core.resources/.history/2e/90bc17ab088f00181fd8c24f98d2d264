@@ -1,0 +1,24 @@
+package com.clients;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.bean.Address;
+import com.bean.Employee;
+
+public class onetooneClient {
+	private static SessionFactory sessionFactory;
+	static{
+		Configuration config = new Configuration();
+		config.configure("/hibernate.cfg.xml");
+		sessionFactory = config.buildSessionFactory();
+	}
+
+	public static void main(String[] args)
+	{
+		Employee employee = new Employee("Shesha","shesha1096@gmail.com");
+		Address address = new Address("Jayanagar","Bangalore","Karnataka","India",employee);
+		
+
+}
+}

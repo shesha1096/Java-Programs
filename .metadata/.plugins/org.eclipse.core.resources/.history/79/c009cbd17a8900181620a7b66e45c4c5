@@ -1,0 +1,24 @@
+package com.bookstore.clients;
+
+import java.sql.Connection;
+
+import com.bookstore.dao.classes.AdminLoginDao1;
+import com.bookstore.model.Admin;
+
+public class AdminClient {
+	public static void main(String[] args)
+	{
+		AdminLoginDao1 adminLoginDao1 = new AdminLoginDao1();
+		
+		if(connection!=null)
+		{
+			System.out.println("Logged in");
+			adminLoginDao1.addUser(connection);
+		}
+		else
+		{
+			System.out.println("Incorrect username/password");
+		}
+	}
+
+}

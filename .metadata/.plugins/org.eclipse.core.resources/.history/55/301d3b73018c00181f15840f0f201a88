@@ -1,0 +1,100 @@
+<%@page import="java.util.List"%>
+<%@ page import="com.classes.*" %>
+    <%@ page import="java.util.*" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#books {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#books tr:nth-child(even){background-color: #f2f2f2;}
+
+#books tr:hover {background-color: #ddd;}
+
+#books th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+h1{
+	text-align: center;
+}
+#main{
+  position:absolute;
+  width:450px;px;
+  height:240px;
+  border:1px solid black;
+  padding:10px;
+}
+#main > div{
+  float:right;
+  margin:10px;
+}
+#d1{
+  width:200px;
+  height:200px;
+  border:1px solid red;
+}
+
+#d2{
+  width:200px;
+  height:200px;
+  border:1px solid blue;
+}
+</style>
+</head>
+<body>
+<% session = request.getSession(false); %>
+<h1> Welcome to the bookstore </h1>
+<%
+Admin admin = (Admin) session.getAttribute("admin");
+if(admin!=null)
+{%>
+	<div id="main">
+  <div id="d1"> <%= admin.getUsername() %></div>
+  <div id="d2"> <% out.print("Admin"); %></div>
+</div>
+<%
+}%>
+
+<form action="ss" method="get">
+<table id="books">
+<tr>
+<th> ISBN</th>
+<th> Book Name </th>
+<th> Author Name </th>
+<th> Price </th>
+<th> Stock </th>
+<th> Add </th>
+</tr>
+<c:forEach var="book" items="${bookList}">
+<tr>
+<td>${book.bookIsbn}</td>
+<td>${book.bookName} </td>
+<td> ${book.authorName}</td>
+<td>${book.price}</td>
+<td> ${book.price} </td>
+<td>${book.stock}</td>
+<td> <input type="checkbox" name="checkbox" value="${book.bookIsbn}"/> </td>
+</tr>
+</c:forEach>
+</table>
+<input type="submit" name="action" value="Buy"/>
+</form>
+</body>
+</html>

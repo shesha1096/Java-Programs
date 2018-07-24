@@ -1,0 +1,36 @@
+package com.bookstore.clients;
+
+import java.util.Scanner;
+
+import com.bookstore.dao.classes.CustomerLoginDao1;
+import com.bookstore.model.User;
+
+public class CustomerClient {
+	public static void main(String[] args)
+	{
+		boolean flag= false;
+		CustomerLoginDao1 customerLoginDao1 = new CustomerLoginDao1();
+		System.out.println("Enter username");
+		String username = new Scanner(System.in).nextLine();
+		System.out.println("Enter password");
+		String password = new Scanner(System.in).nextLine();
+		 flag = customerLoginDao1.checkUser(username,password);
+		if(!flag)
+		{
+			System.out.println("User not found. Want to create a new account?");
+			if(new Scanner(System.in).nextLine().equals("yes"))
+			{
+				User user = new User(); 
+				System.out.println("Enter a username");
+				user.setUsername( new Scanner(System.in).nextLine());
+				System.out.println("Enter a password");
+				user.setPassword(new Scanner(System.in).nextLine());
+				System.out.println("Enter mobile number");
+				user.setMobileNumber(new Scanner(System.in).nextLine());
+				customerLoginDao1.createUser(user);
+				
+			}
+		}
+	}
+
+}

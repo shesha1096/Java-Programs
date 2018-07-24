@@ -1,0 +1,50 @@
+package com.clients;
+
+import java.sql.Date;
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.bean.Book;
+
+public class BookClient {
+	private static SessionFactory sessionFactory;
+	static{
+		Configuration config = new Configuration();
+		config.configure("/hibernate.cfg.xml");
+		sessionFactory = config.buildSessionFactory();
+	}
+	public  boolean addBook(String bookIsbn,String authorName,String bookName,Long stock,Double price,Date dateOfPublication)
+	{
+		Session session = sessionFactory.openSession();
+		Book book = new Book(bookIsbn,bookName,authorName,price,stock,dateOfPublication);
+		session.save(book);
+		session.flush();
+		return true;
+	}
+	public List<Book> getBooks()
+	{
+		Session session = sessionFactory.openSession();
+		Query query = session.createQuery("from Book");
+		return query.list();
+	}
+	public List<Book> findByProperty(String propertyName, Object value)
+	{
+		Session session = sessionFactory.openSession();
+		String queryString = "from book as model where model."+propertyName+"=?";
+		Query query = session.createQuery(queryString);
+		query.setParameter(0, value);
+		return query.list();
+		
+	}
+	public static void main(String[] args)
+	{
+		BookClient bookClient = new BookClient();
+		//bookClient.addBook("3216", "John", "Programming with Java", 50L, 700.00, null);
+		System.out.println(bookClient.getBooks());
+	}
+
+}

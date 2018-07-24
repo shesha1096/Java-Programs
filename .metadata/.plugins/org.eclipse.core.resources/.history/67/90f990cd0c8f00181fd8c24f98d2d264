@@ -1,0 +1,42 @@
+package com.clients;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.bean.Address;
+import com.bean.Employee;
+
+public class onetooneClient {
+	private static SessionFactory sessionFactory;
+	static{
+		Configuration config = new Configuration();
+		config.configure("/hibernate.cfg.xml");
+		sessionFactory = config.buildSessionFactory();
+	}
+
+	public static void main(String[] args)
+	{
+//		Employee employee = new Employee("Shankar","shankar1096@gmail.com");
+//		Address address = new Address("Jayanagar","Bangalore","Karnataka","India",employee);
+//		employee.setAddress(address);
+		Session session = sessionFactory.openSession();
+		session.getTransaction().begin();
+//		session.save(employee);
+		String query = "from Employee as employee where employee.employeeId=?";
+		Query queryObject = session.createQuery(query);
+		queryObject.setParameter(0, 2);
+		List<Employee> employees = queryObject.list();
+		for(Employee emp: employees)
+		{
+			System.out.println(emp.getAddress());
+		}
+		session.getTransaction().commit();
+		
+		
+
+}
+}

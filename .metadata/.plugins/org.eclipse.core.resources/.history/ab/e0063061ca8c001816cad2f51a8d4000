@@ -1,0 +1,22 @@
+package com.dao.classes;
+
+import java.sql.Connection;
+
+import com.dao.interfaces.UserDaoI;
+import com.utilities.DbConnection;
+
+public class UserDao implements UserDaoI {
+	private Connection connection;
+	
+	public UserDao() {
+		super();
+		connection = DbConnection.getConnection();
+	}
+
+	@Override
+	public boolean validateUser(String username, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

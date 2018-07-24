@@ -1,0 +1,47 @@
+package com.bean;
+
+import java.sql.Date;
+
+public class Complaint {
+	private Long complaintId;
+	private String text;
+	private String status;
+	private Date date;
+	private Customer customer;
+	public Complaint() {
+		super();
+	}
+	public Complaint(Long complaintId, String text, String status, Date date) {
+		super();
+		this.complaintId = complaintId;
+		this.text = text;
+		this.status = status;
+		this.date = date;
+	}
+	public Long getComplaintId() {
+		return complaintId;
+	}
+	public void setComplaintId(Long complaintId) {
+		this.complaintId = complaintId;
+	}
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+
+}

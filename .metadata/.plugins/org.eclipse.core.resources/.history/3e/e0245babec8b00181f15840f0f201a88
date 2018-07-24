@@ -1,0 +1,168 @@
+package com.dao.classes;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.dao.interfaces.CustomerLoginDao;
+import com.classes.Book;
+import com.classes.Cart;
+import com.classes.User;
+import com.utilities.DbUtility;
+
+public class CustomerLoginDao1 implements CustomerLoginDao {
+	private Connection connection;
+	private Cart cart;
+	{
+		 connection = DbUtility.connectToDb();
+		 cart=new Cart();
+		
+	}
+
+	@Override
+	public User checkUser(String username, String password) {
+		// TODO Auto-generated method stub
+		User user=null;
+		
+		if(connection!=null)
+		{
+			String query = "select * from customer";
+			try {
+				PreparedStatement pStatement = connection.prepareStatement(query) ;
+				ResultSet rs = pStatement.executeQuery();
+				while(rs.next())
+				{
+					if(rs.getString(1).equals(username) && rs.getString(2).equals(password))
+					{
+						//System.out.println("Successfully logged in");
+						 user = new User();
+						user.setUsername(rs.getString(1));
+						user.setPassword(rs.getString(2));
+						user.setMobileNumber(rs.getString(3));
+						return user;
+					}
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return null;
+	}
+
+	@Override
+	public boolean loginUser() {
+		// TODO Auto-generated method stub
+		
+		return false;
+	}
+	public void createUser(User user)
+	{
+		if(connection!=null)
+		{
+			String query = "insert into request values(?,?,?)";
+			try {
+				PreparedStatement pStatement = connection.prepareStatement(query);
+				pStatement.setString(1, user.getUsername());
+				pStatement.setString(2, user.getPassword());
+				pStatement.setString(3, user.getMobileNumber());
+				int n = pStatement.executeUpdate();
+				if(n>0)
+				{
+					//System.out.println("Successfully inserted");
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+	public List<Book> viewStore()
+	{
+		List<Book> booksList = new ArrayList<>();
+		String query = "select * from bookstore";
+		try {
+			PreparedStatement pStatement = connection.prepareStatement(query);
+			ResultSet rs = pStatement.executeQuery();
+			while(rs.next())
+			{
+				Book book = new Book();
+				book.setBookIsbn(rs.getInt(1));
+				book.setBookName(rs.getString(2));
+				book.setAuthorName(rs.getString(3));
+				book.setPrice(rs.getDouble(4));
+				book.setStock(rs.getInt(5));
+				booksList.add(book);
+				System.out.println(booksList.get(0).getBookName());
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return booksList;
+	
+		
+	}
+	public void addBookToCart(Book book)
+	{
+		
+		cart.getBookList().add(book);
+		
+		//System.out.println("Select the book name that you want to add to cart");
+		//String bookName = new Scanner(System.in).nextLine();
+		
+			
+		
+		
+		
+	}
+	public void createCartTable(Cart cart)
+	{
+		String query = "create table cart"
+				+ "("
+				+ "isbn number(5) primary key,"
+				+ "bookname varchar2(30) not null,"
+				+ "authorname varchar2(30),"
+				+ "price number(5,2),"
+				+ "quantity number"
+				+ ")";
+		try {
+			PreparedStatement createStatement = connection.prepareStatement(query);
+			int n = createStatement.executeUpdate();
+			String insertQuery = "insert into cart values(?,?,?,?,?)";
+			PreparedStatement insertStatement = connection.prepareStatement(insertQuery);
+			for(Book book: cart.getBookList())
+			{
+				insertStatement.setInt(1, book.getBookIsbn());
+				insertStatement.setString(2, book.getBookName());
+				insertStatement.setString(3, book.getAuthorName());
+				insertStatement.setDouble(4, book.getPrice());
+				insertStatement.setInt(5, book.getStock());
+				n = insertStatement.executeUpdate();
+				if(n>0)
+				{
+					System.out.println("Successfully inserted");
+					String deleteQuery = "drop table cart";
+					PreparedStatement deleteStatement = connection.prepareStatement(deleteQuery);
+					boolean flag = deleteStatement.execute();
+					if(flag)
+					{
+						System.out.println("Table deleted");
+					}
+				}
+			
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
